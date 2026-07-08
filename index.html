@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<head>
+<title> MARVEL </title>
+<style>
+    .encabezado {color:white; 
+        font-size: 25px;
+        font-family: sans-serif;
+    }
+    div ul {
+        list-style:none;
+        margin:0;
+        padding:0;
+    }
+    div li{
+        float:none;
+        
+    }
+    div a{
+        display:block;
+        background-color:rgb(255, 166, 0);
+        text-decoration:none;
+        text-align:center;
+        margin:5px;
+        color:rgb(255, 255, 255);
+        width:150px;
+        height:40px;
+        line-height:45px;
+        font-size: 20px;
+    }
+    div a:hover{
+        background-color:rgb(7, 7, 7);
+    }
+    .titulo1 {font-size:20px;
+        color: #ffffff;
+        font-family: Helvetica;
+    }
+    .body{
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10px;
+        margin: 0;
+        background-color: white;
+    }
+    .card {
+        background-color: white;
+        border-radius: 0px;
+        max-width: 200px;
+        padding: 10px;
+        text-align: center;
+        margin: 10px;
+        font-size:15px ;
+        font-family: serif;
+    }
+    .card img{
+        max-width: 100%;
+    }
+     .card h2{
+        font-size: 20px;
+        margin: 15px 0;
+        color: black;
+    }
+     .card p{
+        color:black;
+        margin: 15px;
+    }
+    .card button{
+        background-color: rgb(161, 3, 3);
+        border: none;
+        color: #ffffff;
+        padding: 10px 15px;
+    }
+    .card button:hover{
+        background-color: rgb(0, 0, 0);
+    }
+
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .contenedor {
+        width: 1024px;
+        height: 768px;
+        border: 2px solid black;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 250px;
+        grid-template-rows: 160px 544px 60px;
+
+    }
+    .box{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        color: #ffffff;
+        border: 1px solid #333;
+        font-family: sans-serif;
+    }
+    .header{
+        grid-column: span 2;
+        background-color: rgb(161, 3, 3);
+        font-family: serif;
+        font-size: 50px;
+    }
+
+    .nav{
+        grid-column:span 1;
+        background-color:rgb(160, 136, 2);
+        font-family: serif;
+    }
+    .section{
+        background-color: rgb(6, 15, 95);
+    }
+    .footer{
+        grid-column: span 2;
+        background-color:rgb(161, 3, 3);
+        font-size: 20px;
+        font-family: serif;
+
+    }
+
+</style>
+</head>
+<body>
+    <div class="contenedor">
+    <div class="box header"> Los pilares de marvel </div>
+    <div class="box nav">
+        <ul>
+            <li> <a href="#">Inicio</a></li>
+            <li> <a href="#">Thor</a></li>
+            <li> <a href="#">Capitan</a></li>
+            <li> <a href="#">Iron man </a></li>
+            <li> <a href="#">Conocer mas</a></li>
+            
+        </ul>
+    </div>
+    <div class="box section"> 
+        <div class="card"> 
+            <img src="THOR.jpg" alt="ejemplo">
+            <h2> Thor</h2>
+            <p>Famoso por su coraje, espíritu protector y apetito voraz, se le caracteriza por su martillo mágico Mjölnir, 
+                su cinturón de fuerza Megingjörð y su defensa tanto de Asgard como de Midgard (la Tierra). </p>
+            
+            <button> Leer mas</button>
+        </div>
+        <div class="card"> 
+            <img src="CAPITAN.jpg" alt="ejemplo" width="160px">
+            <h2> Capitan america</h2>
+            <p>es un supersoldado con fuerza, velocidad y resistencia en el límite humano. 
+                Sus características principales incluyen sus valores inquebrantables de 
+                lealtad, valentía y nobleza. </p>
+            
+            <button> Leer mas</button>
+        </div>
+        <div class="card"> 
+            <img src="IRON.jpg" alt="ejemplo" width="140px" height="100px">
+            <h2> Iron man</h2>
+            <p>Se definen por su brillante intelecto y su avanzada tecnología. 
+                Carece de superpoderes biológicos; en su lugar, utiliza armaduras de alta tecnología 
+                impulsadas por un reactor en su pecho. </p>
+            
+            <button> Leer mas</button>
+        </div>
+    </div>
+    <div class="box footer"> Programacion web / Alumnos: Jared Noh y Glendy moo / Universidad Republica De Mexico </div>
+</div>
+</body>
+</html>
